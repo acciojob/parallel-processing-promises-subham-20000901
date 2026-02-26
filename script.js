@@ -15,7 +15,7 @@ function downloadImage(url){
 		const img = new Image();
 		img.src = url;
 		 img.onload = () => resolve(img);
-		img.onerror =() => reject("Failed to load image" + url);
+		img.onerror =() => reject(img);
 		
 	});
 }
