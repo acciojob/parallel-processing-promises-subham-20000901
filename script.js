@@ -31,11 +31,8 @@ function downloadImages() {
 		loading.innerText = "";
 		result.forEach(image => {
 			output.appendChild(image);
-		})
-	}).catch((err) =>{
-		loading.innerText = "";
-		error.innerText = err;
-	})
+		});
+	});
 	
 }
 btn.addEventListener('click',downloadImages);
